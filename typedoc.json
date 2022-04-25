@@ -1,6 +1,5 @@
 {
-    "inputFiles": ["./src"],
-    "mode": "modules",
-    "out": "docs",
-    "exclude": "src/index.ts"
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": ["./src"],
+  "out": "doc"
 }
