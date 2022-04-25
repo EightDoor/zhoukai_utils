@@ -1,0 +1,42 @@
+{
+  "name": "zk_utils",
+  "version": "1.0.0",
+  "description": "log日志",
+  "main": "dist/index.js",
+  "scripts": {
+    "doc": "typedoc --options typedoc.json",
+    "copy": "cp package.json README.md dist",
+    "build": "rollup -c && npm run copy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EightDoor/log_util.git"
+  },
+  "keywords": [
+    "log",
+    "util",
+    "zk",
+    "print"
+  ],
+  "author": "周凯",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EightDoor/log_util/issues"
+  },
+  "homepage": "https://github.com/EightDoor/log_util#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@types/node": "^17.0.26",
+    "commander": "^9.2.0",
+    "rollup": "^2.70.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "shelljs": "^0.8.5",
+    "tslib": "^2.4.0",
+    "typedoc": "^0.22.15",
+    "typescript": "^4.6.3"
+  }
+}

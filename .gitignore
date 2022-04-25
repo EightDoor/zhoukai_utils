@@ -1,0 +1,8 @@
+node_modules
+.history
+dist
+.rollup.cache
+
+example/node_modules
+example/.parcel-cache
+example/dist

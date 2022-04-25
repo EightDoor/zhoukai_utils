@@ -1,0 +1,78 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "example",
+      "version": "1.0.0",
+      "description": "",
+      "source": "index.html",
+      "main": "index.js",
+      "scripts": {
+        "dev": "parcel",
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "author": "",
+      "license": "ISC",
+      "devDependencies": {
+        "parcel": "^2.5.0",
+        "zk_utils": "1.0.0"
+      }
+    },
+    "prefix": "/Users/zhoukai/Desktop/my-project/log_util/example"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/Users/zhoukai/.pnpm-store/v3",
+    "virtualStoreDir": "/Users/zhoukai/Desktop/my-project/log_util/example/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/Users/zhoukai/Desktop/my-project/log_util/example",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/parcel/2.5.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "parcel",
+      "rawSpec": "^2.5.0"
+    }
+  },
+  "5 debug pnpm:_dependency_resolved": {
+    "resolution": "link:..",
+    "wanted": {
+      "dependentId": ".",
+      "rawSpec": "../"
+    }
+  },
+  "6 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/parcel/2.5.0",
+    "requester": "/Users/zhoukai/Desktop/my-project/log_util/example",
+    "status": "found_in_store"
+  },
+  "7 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/parcel/2.5.0",
+    "requester": "/Users/zhoukai/Desktop/my-project/log_util/example",
+    "status": "resolved"
+  },
+  "8 error pnpm": {
+    "code": "ERR_PNPM_FETCH_404",
+    "hint": "zk_utils is not in the npm registry, or you have no permission to fetch it.\n\nAn authorization header was used: Bearer npm_[hidden]",
+    "request": {
+      "authHeaderValue": "Bearer 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",
+      "url": "https://registry.npmjs.org/zk_utils"
+    },
+    "response": {
+      "size": 0
+    },
+    "pkgName": "zk_utils",
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "GET https://registry.npmjs.org/zk_utils: Not Found - 404",
+      "code": "ERR_PNPM_FETCH_404",
+      "stack": "pnpm: GET https://registry.npmjs.org/zk_utils: Not Found - 404\n    at RetryOperation._fn (/Users/zhoukai/.nvm/versions/node/v16.14.2/lib/node_modules/pnpm/dist/pnpm.cjs:85721:19)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+    }
+  }
+}
