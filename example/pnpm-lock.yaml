@@ -2,10 +2,10 @@ lockfileVersion: 5.3
 
 specifiers:
   parcel: ^2.5.0
-  zk_utils: link:..
+  zk_utils: link:..\dist
 
 dependencies:
-  zk_utils: link:..
+  zk_utils: link:../dist
 
 devDependencies:
   parcel: 2.5.0
