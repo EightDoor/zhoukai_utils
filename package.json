@@ -1,8 +1,8 @@
 {
   "name": "zhoukai_utils",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "log日志",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
     "doc": "typedoc --options typedoc.json",
     "copy": "cp package.json README.md dist",
