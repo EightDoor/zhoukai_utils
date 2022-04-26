@@ -1,6 +1,6 @@
 {
   "name": "zhoukai_utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "log日志",
   "main": "dist/index.js",
   "scripts": {
