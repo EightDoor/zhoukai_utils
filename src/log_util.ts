@@ -20,7 +20,7 @@ const log = {
   },
   s (val: any, title?: string) {
     this.timeFun();
-    console.group(`${title + '-> success'} ->`);
+    console.group(`${title ?? "" + ' -> 【success】'} ->`);
     console.log(val);
     console.groupEnd();
   },
@@ -31,7 +31,7 @@ const log = {
    */
   i(val: any, title?: string) {
     this.timeFun();
-    console.group(`${title + '-> info'} ->`);
+    console.group(`${title ?? "" + ' -> 【info】'} ->`);
     console.log(val);
     console.groupEnd();
   },
@@ -42,7 +42,7 @@ const log = {
    */
   d(val: any, title?: string) {
     this.timeFun();
-    console.group(`${title + '-> debug'} ->`);
+    console.group(`${title ?? "" + ' -> 【debug】'} ->`);
     console.log(val);
     console.groupEnd();
   },
@@ -52,7 +52,7 @@ const log = {
    */
   e(val: any, title?: string) {
     this.timeFun();
-    console.group(`${title + '-> error'} ->`);
+    console.group(`${title ?? "" + ' -> 【error】'} ->`);
     console.error(val);
     console.groupEnd();
   },
@@ -63,7 +63,7 @@ const log = {
    */
   w(val: any, title?: string) {
     this.timeFun();
-    console.group(`${title + '-> warn'} ->`);
+    console.group(`${title ?? "" + ' -> 【warn】'} ->`);
     console.warn(val);
     console.groupEnd();
   },
@@ -74,7 +74,7 @@ const log = {
    */
   trace (val: any, title?: string) {
     this.timeFun();
-    console.group(`${title + '-> trace'} ->`);
+    console.group(`${title ?? "" + ' -> 【trace】'} ->`);
     console.trace(val);
     console.groupEnd();
   },
