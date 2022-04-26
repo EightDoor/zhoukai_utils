@@ -1,5 +1,5 @@
 {
-  "name": "zk_utils",
+  "name": "zhoukai_utils",
   "version": "1.0.0",
   "description": "log日志",
   "main": "dist/index.js",
