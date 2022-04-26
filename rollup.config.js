@@ -1,7 +1,12 @@
 import resolve from "rollup-plugin-node-resolve";
 import commonjs from "rollup-plugin-commonjs";
 import typescript from "rollup-plugin-typescript2";
+import babel from "@rollup/plugin-babel";
 import pkg from "./package.json";
+import filesize from "rollup-plugin-filesize";
+import { uglify } from "rollup-plugin-uglify";
+
+const isProd = process.env.NODE_ENV === "production";
 
 export default {
   input: "src/index.ts", // 打包入口
@@ -18,5 +23,8 @@ export default {
     typescript({
       tsconfig: "./tsconfig.json",
     }), // 解析TypeScript
+    filesize(),
+    babel({ babelHelpers: "runtime", exclude: ["node_modules/**"] }),
+    isProd && uglify(),
   ],
 };
