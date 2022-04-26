@@ -6,7 +6,7 @@
   "scripts": {
     "doc": "typedoc --options typedoc.json",
     "copy": "cp package.json README.md dist",
-    "build": "rollup -c && npm run copy"
+    "build": "rollup -c -w && npm run copy"
   },
   "repository": {
     "type": "git",
