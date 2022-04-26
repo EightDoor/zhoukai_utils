@@ -13,7 +13,6 @@ export default {
   output: {
     // 打包出口
     file: "dist/index.js", // 最终打包出来的文件路径和文件名，这里是在package.json的browser: 'dist/index.js'字段中配置的
-
     //     格式(format -f/--output.format)
     // 文档地址 https://www.rollupjs.com/guide/big-list-of-options
     // String 生成包的格式。 下列之一:

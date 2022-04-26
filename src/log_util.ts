@@ -1,7 +1,6 @@
 
 // console.log mdn 介绍 https://developer.mozilla.org/zh-CN/docs/Web/API/Console
 
-const baseStyle = "font-size: 15px;"
 const log = {
   isStartTime: false,
   timeFun() {
@@ -22,7 +21,7 @@ const log = {
   s (val: any, title?: string) {
     this.timeFun();
     console.group(`${title ?? 'success'} ->`);
-    console.log(`%c${val}`, `color: Green;${baseStyle}`);
+    console.log(val);
     console.groupEnd();
   },
 
@@ -33,7 +32,7 @@ const log = {
   i(val: any, title?: string) {
     this.timeFun();
     console.group(`${title ?? 'info'} ->`);
-    console.info(`%c${val}`, `color: #ffcc00;${baseStyle}`);
+    console.info(val);
     console.groupEnd();
   },
 
@@ -44,7 +43,7 @@ const log = {
   d(val: any, title?: string) {
     this.timeFun();
     console.group(`${title ?? 'debug'} ->`);
-    console.debug(`%c${val}`, `color: OrangeRed;${baseStyle}`);
+    console.debug(val);
     console.groupEnd();
   },
   /**
