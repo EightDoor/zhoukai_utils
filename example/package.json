@@ -10,9 +10,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/core": "^2.5.0",
+    "@parcel/transformer-vue": "2.5.0",
     "parcel": "^2.5.0"
   },
   "dependencies": {
+    "vue": "^3.2.33",
     "zk_utils": "link:../dist"
   }
 }
