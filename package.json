@@ -1,6 +1,6 @@
 {
   "name": "zhoukai_utils",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "log日志",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,8 @@
     "log",
     "util",
     "zk",
+    "zhoukai",
+    "front",
     "print"
   ],
   "author": "周凯",

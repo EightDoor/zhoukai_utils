@@ -1,12 +1,12 @@
-import { log } from "zk_utils";
+import { LogUtil } from "zk_utils";
 
 
+const log = new LogUtil();
 
 log.d("content test", 'debug test')
 log.i("content test", 'info test')
 log.e("content test", 'error test')
 log.s("content test123", 'success test')
-
 
 
 

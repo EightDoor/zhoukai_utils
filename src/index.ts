@@ -1,6 +1,10 @@
-import log from './log_util'
+
+/**
+ * @module log util
+ */
+import LogUtil from './log_util'
 
 export {
-  log
+  LogUtil
 }
 

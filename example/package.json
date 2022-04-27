@@ -4,7 +4,7 @@
   "description": "",
   "source": "index.html",
   "scripts": {
-    "dev": "parcel --no-cache",
+    "dev": "parcel --no-cache index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
