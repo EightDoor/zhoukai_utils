@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "source": "index.html",
-  "main": "index.js",
   "scripts": {
-    "dev": "parcel",
+    "dev": "parcel --no-cache",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
