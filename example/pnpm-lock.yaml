@@ -1,14 +1,16 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@parcel/core': ^2.5.0
   '@parcel/transformer-vue': 2.5.0
   parcel: ^2.5.0
   vue: ^3.2.33
+  zhoukai_utils: link:../dist
   zk_utils: link:../dist
 
 dependencies:
   vue: 3.2.33
+  zhoukai_utils: link:../dist
   zk_utils: link:../dist
 
 devDependencies:

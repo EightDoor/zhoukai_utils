@@ -23,8 +23,9 @@ export default {
     //     iife – 一个自动执行的功能，适合作为<script>标签。（如果要为应用程序创建一个捆绑包，您可能想要使用它，因为它会使文件大小变小。）
     //     umd – 通用模块定义，以amd，cjs 和 iife 为一体
     //     system - SystemJS 加载器格式
-    format: "esm", // umd是兼容amd/cjs/iife的通用打包格式，适合浏览器
-    name: "util",
+    format: "umd", // umd是兼容amd/cjs/iife的通用打包格式，适合浏览器
+    name: "zhoukai_utils",
+    sourcemap: false,
   },
   plugins: [
     // 打包插件

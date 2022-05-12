@@ -1,4 +1,4 @@
-import dayjs  from 'dayjs';
+import dayjs from "dayjs";
 
 const dateUtil = {
   /**
@@ -13,8 +13,7 @@ const dateUtil = {
    * 直接返回 dayjs
    * @returns
    */
-  formatDayjs: dayjs
-}
+  formatDayjs: dayjs,
+};
 
-
-export { dateUtil }
+export { dateUtil };

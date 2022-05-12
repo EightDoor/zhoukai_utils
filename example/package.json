@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "vue": "^3.2.33",
+    "zhoukai_utils": "link:../dist",
     "zk_utils": "link:../dist"
   }
 }
