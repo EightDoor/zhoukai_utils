@@ -1,9 +1,3 @@
 node_modules
-.history
-dist
-.rollup.cache
-
-example/node_modules
-example/.parcel-cache
-example/dist
-example_node/node_modules
+packages/**/node_modules
+packages/**/dist

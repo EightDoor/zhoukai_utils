@@ -1,5 +1,6 @@
 {
   "name": "example",
+  "private": true,
   "version": "1.0.0",
   "description": "",
   "source": "index.html",
@@ -10,13 +11,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/core": "^2.5.0",
-    "@parcel/transformer-vue": "2.5.0",
-    "parcel": "^2.5.0"
+    "@parcel/core": "^2.6.0",
+    "@parcel/transformer-vue": "2.6.0",
+    "parcel": "^2.6.0"
   },
   "dependencies": {
     "vue": "^3.2.33",
-    "zhoukai_utils": "link:../dist",
-    "zk_utils": "link:../dist"
+    "zhoukai_utils": "link:..\\log\\dist"
   }
 }

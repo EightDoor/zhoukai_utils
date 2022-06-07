@@ -11,11 +11,11 @@
     width: 17px;
     height: 17px;
     margin: 0 3px 2px 0;
-    background-image: url(./icons.png);
+    background-image: url(icons.png);
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
     .tsd-kind-icon:before {
-        background-image: url(./icons@2x.png);
+        background-image: url(icons@2x.png);
         background-size: 238px 204px;
     }
 }

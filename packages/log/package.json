@@ -1,0 +1,58 @@
+{
+  "name": "zhoukai_utils",
+  "version": "2.0.0",
+  "description": "log日志",
+  "keywords": [
+    "log",
+    "util",
+    "zk",
+    "zhoukai",
+    "front",
+    "print"
+  ],
+  "license": "MIT",
+  "author": "周凯",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EightDoor/log_util.git"
+  },
+  "main": "./index.ts",
+  "scripts": {
+    "doc": "typedoc --options typedoc.json",
+    "copy": "cp package.json README.md dist",
+    "build": "rollup -c --environment NODE_ENV:production && npm run copy",
+    "dev": "rollup -c  --watch && npm run copy",
+    "lint": "eslint ../..",
+    "lint:fix": "eslint ../.. --fix"
+  },
+  "bugs": {
+    "url": "https://github.com/EightDoor/log_util/issues"
+  },
+  "homepage": "https://github.com/EightDoor/log_util#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "dayjs": "^1.11.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.23.0",
+    "@babel/core": "^7.17.9",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@lopatnov/rollup-plugin-uglify": "^2.1.2",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@types/node": "^17.0.26",
+    "commander": "^9.2.0",
+    "core-js": "2",
+    "eslint": "^8.15.0",
+    "rollup": "^2.75.5",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-filesize": "^9.1.2",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "shelljs": "^0.8.5",
+    "terser": "^5.14.0",
+    "tslib": "^2.4.0",
+    "typedoc": "^0.22.15",
+    "typescript": "^4.6.3"
+  }
+}

@@ -1,10 +1,7 @@
-# 工具库
-- log_util 日志打印
-- date_util 日期格式化
-- store_util 使用localStore
-
-
-## 开发
-- 链接仓库到example和example_node
-  - `cd example && pnpm add ../dist/`
-  - `cd example_node && pnpm add ../dist`
+# Workspace
+- packages包共享到其他项目
+  - pnpm install xxx -r --filter rrr    xxx为要安装的包，rrr为目的地包
+# 运行
+- `npm run dev:html` 启动前端
+- `npm run dev:node` 启动node端
+- `npm run clean` 删除所有node_modules

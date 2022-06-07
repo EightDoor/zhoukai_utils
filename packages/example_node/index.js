@@ -1,4 +1,4 @@
-const { LogUtil } = require('zhoukai_utils')
+const { LogUtil } = require("zhoukai_utils")
 
 const log = new LogUtil()
 

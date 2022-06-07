@@ -1,5 +1,6 @@
 {
   "name": "example_node",
+  "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,6 +14,6 @@
     "nodemon": "^2.0.16"
   },
   "dependencies": {
-    "zhoukai_utils": "link:../dist"
+    "zhoukai_utils": "link:..\\log\\dist"
   }
 }

@@ -19,7 +19,7 @@
 <script lang="ts">
 import { defineComponent, ref } from "vue";
 import { onMounted } from "vue";
-import { LogUtil, dateUtil, StoreUtil } from "zk_utils";
+import { LogUtil, dateUtil, StoreUtil } from "zhoukai_utils";
 
 export default defineComponent({
   setup() {

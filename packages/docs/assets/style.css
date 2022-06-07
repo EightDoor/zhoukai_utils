@@ -1,4 +1,4 @@
-@import url("./icons.css");
+@import url("icons.css");
 
 :root {
     /* Light */
@@ -1267,7 +1267,7 @@ ul.tsd-type-parameters .tsd-comment {
     width: 40px;
     height: 40px;
     margin: 0 -8px 0 0;
-    background-image: url(./widgets.png);
+    background-image: url(widgets.png);
     background-repeat: no-repeat;
     text-indent: -1024px;
     vertical-align: bottom;
@@ -1277,7 +1277,7 @@ ul.tsd-type-parameters .tsd-comment {
     .tsd-select .tsd-select-list li:before,
     .tsd-select .tsd-select-label:before,
     .tsd-widget:before {
-        background-image: url(./widgets@2x.png);
+        background-image: url(widgets@2x.png);
         background-size: 320px 40px;
     }
 }
