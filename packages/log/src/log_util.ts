@@ -90,8 +90,13 @@ class LogUtil {
       this.formatChalkVal(chalk, title ?? '', val, type)
     }
     else {
-      console.group(`${title ?? `${type} -> 【success】`} ->`)
-      console[type ?? 'log'](val)
+      console.group(`${title ?? ''} -> 【${type}】`)
+
+      if (type === 'debug')
+        console.log(val)
+      else
+        console[type ?? 'log'](val)
+
       console.groupEnd()
     }
   }
@@ -140,7 +145,7 @@ class LogUtil {
         color[0],
         color[1],
         color[2],
-      )(`${title ?? `${type} -> 【success】`} ->`),
+      )(`${title ?? ''} -> 【${type}】`),
     )
     console.log(
       baseChalk.rgb(color[0], color[1], color[2])(JSON.stringify(val)),
@@ -166,7 +171,7 @@ class LogUtil {
    * @param title
    */
   s(val: any, title?: string) {
-    this.pintValue(`${title ?? '' + ' -> 【success】'} ->`, val, 'log')
+    this.pintValue(title, val, 'log')
   }
 
   /**
@@ -175,7 +180,7 @@ class LogUtil {
    * @param title
    */
   i(val: any, title?: string) {
-    this.pintValue(`${title ?? '' + ' -> 【info】'} ->`, val, 'info')
+    this.pintValue(title, val, 'info')
   }
 
   /**
@@ -184,7 +189,7 @@ class LogUtil {
    * @param title
    */
   d(val: any, title?: string) {
-    this.pintValue(`${title ?? '' + ' -> 【debug】'} ->`, val, 'debug')
+    this.pintValue(title, val, 'debug')
   }
 
   /**
@@ -193,7 +198,7 @@ class LogUtil {
    * @param title
    */
   e(val: any, title?: string) {
-    this.pintValue(`${title ?? '' + ' -> 【error】'} ->`, val, 'error')
+    this.pintValue(title, val, 'error')
   }
 
   /**
@@ -202,7 +207,7 @@ class LogUtil {
    * @param title
    */
   w(val: any, title?: string) {
-    this.pintValue(`${title ?? '' + ' -> 【warn】'} ->`, val, 'warn')
+    this.pintValue(title, val, 'warn')
   }
 
   /**
@@ -211,7 +216,7 @@ class LogUtil {
    * @param title
    */
   trace(val: any, title?: string) {
-    this.pintValue(`${title ?? '' + ' -> 【trace】'} ->`, val, 'trace')
+    this.pintValue(title, val, 'trace')
   }
 
   /**
@@ -220,7 +225,7 @@ class LogUtil {
    * @param title
    */
   table(val: any, title?: string) {
-    this.pintValue(`${title ?? '' + ' -> 【table】'} ->`, val, 'table')
+    this.pintValue(title, val, 'table')
   }
 
   /**
