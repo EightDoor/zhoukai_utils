@@ -90,14 +90,21 @@ class LogUtil {
       this.formatChalkVal(chalk, title ?? '', val, type)
     }
     else {
-      console.group(`${title ?? ''} -> 【${type}】`)
-
-      if (type === 'debug')
-        console.log(val)
+      let typeVal: any = 'log'
+      if (type !== 'debug')
+        typeVal = type
       else
-        console[type ?? 'log'](val)
+        typeVal = 'log'
 
-      console.groupEnd()
+      if (this.isObject(val)) {
+        console.log(`----------${title}----------`)
+        // @ts-expect-error
+        console[typeVal](val)
+      }
+      else {
+        // @ts-expect-error
+        console[typeVal](`${title ? `[${title}:]` : `[${typeVal}]`} ${val}`)
+      }
     }
   }
 
@@ -140,17 +147,9 @@ class LogUtil {
     type?: LogType,
   ) {
     const baseChalk = chalk.bold
-    console.group(
-      chalk.rgb(
-        color[0],
-        color[1],
-        color[2],
-      )(`${title ?? ''} -> 【${type}】`),
-    )
     console.log(
-      baseChalk.rgb(color[0], color[1], color[2])(JSON.stringify(val)),
+      `${title ? `${title}:` : ''} ${baseChalk.rgb(color[0], color[1], color[2])(JSON.stringify(val))}`,
     )
-    console.groupEnd()
   }
 
   /**
@@ -233,6 +232,10 @@ class LogUtil {
    */
   clear() {
     console.clear()
+  }
+
+  isObject = (value: any) => {
+    return value != null && (typeof value == 'object' || typeof value == 'function')
   }
 }
 
